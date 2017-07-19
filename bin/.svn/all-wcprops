@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/platform/!svn/ver/63856/refactor/boss/sync-handler-center-product/bin
+END
+sync-handler-center.so.dev
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/bin/sync-handler-center.so.dev
+END
+sync-handler-center.so_test
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/bin/sync-handler-center.so_test
+END
+sync-handler-center
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/bin/sync-handler-center
+END
+check-single
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/bin/check-single
+END
+daemon.pid
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/platform/!svn/ver/63856/refactor/boss/sync-handler-center-product/bin/daemon.pid
+END

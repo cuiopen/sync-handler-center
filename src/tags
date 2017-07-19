@@ -1,0 +1,396 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+AckPack	center_package.cpp	/^bool CenterPackHandler::AckPack(const char* out_buf, const int buf_len, map<string, ServiceGroupInfo> &list)$/;"	f	class:CenterPackHandler
+AsyncGetProcessIdentity	startegy_async_handler.cpp	/^bool StrategyAsyncProtoHandler::AsyncGetProcessIdentity(ClientInfo *ci,$/;"	f	class:StrategyAsyncProtoHandler
+CacheMgr	cache_mgr.h	/^    CacheMgr(int sync_num, int type) : m_sync_num(sync_num),$/;"	f	class:CacheMgr
+CacheMgr	cache_mgr.h	/^class CacheMgr$/;"	c
+CenterPackHandler	center_package.h	/^class CenterPackHandler$/;"	c
+Check	startegy_proto_handler.cpp	/^bool StrategyProtoHandler::Check(map<string, ServiceGroupInfo> &group_list)$/;"	f	class:StrategyProtoHandler
+ClientInfo	client_info.h	/^class ClientInfo$/;"	c
+ClientInfoMap	client_info.h	/^    typedef std::unordered_map<uint32_t, ClientInfo*> ClientInfoMap;$/;"	t	class:ClientInfo
+ClientInfoMapIter	client_info.h	/^    typedef std::unordered_map<uint32_t, ClientInfo*>::iterator ClientInfoMapIter;$/;"	t	class:ClientInfo
+Content	proto.h	/^struct Content$/;"	s
+Control	control.h	/^class Control : public IProcessor$/;"	c
+DATA_LEN	dao.cpp	15;"	d	file:
+DB_ERR	proto.h	40;"	d
+DEFAULT_ALLOC_SIZE	mempool.cpp	9;"	d	file:
+DbproxyProtoHandler	dbproxy_proto_handler.cpp	/^DbproxyProtoHandler::DbproxyProtoHandler() : m_type(1)$/;"	f	class:DbproxyProtoHandler
+DbproxyProtoHandler	dbproxy_proto_handler.h	/^class DbproxyProtoHandler : public IntSyncProtoHandler$/;"	c
+DealMessage	client_info.cpp	/^int ClientInfo::DealMessage(uint32_t now) {$/;"	f	class:ClientInfo
+DeleteOneMessage	dao.cpp	/^int DeleteOneMessage(uint32_t sync_id, const char * table_name)$/;"	f
+DestroyClient	producer.cpp	/^void Producer::DestroyClient(uint32_t sn)$/;"	f	class:Producer
+DestroyClient	proxy.cpp	/^void Proxy::DestroyClient(uint32_t sn)$/;"	f	class:Proxy
+DoServerTimeout	producer.cpp	/^int Producer::DoServerTimeout(void *owner, void *arg)$/;"	f	class:Producer
+DoServerTimeout	proxy.cpp	/^int Proxy::DoServerTimeout(void *owner, void *arg)$/;"	f	class:Proxy
+ERROR_LOG_RP	monitor_api.h	17;"	d
+FLAGS	Makefile	/^FLAGS  		= -std=c++0x -Wall -pipe -D_GNU_SOURCE -fPIC -shared -export-dynamic -ggdb -Wno-non-virtual-dtor$/;"	m
+FillAllList	cache_mgr.cpp	/^void CacheMgr::FillAllList()$/;"	f	class:CacheMgr
+FillMessage	dao.cpp	/^void FillMessage(int game_id, list_head_t * game_id_list, int num)$/;"	f
+GetAsyncProtoHandlerByFd	producer.cpp	/^IAsyncProtoHandler *Producer::GetAsyncProtoHandlerByFd(int fd)$/;"	f	class:Producer
+GetAsyncProtoHandlerByFd	proxy.cpp	/^IAsyncProtoHandler *Proxy::GetAsyncProtoHandlerByFd(int fd)$/;"	f	class:Proxy
+GetCenterGroup	startegy_proto_handler.cpp	/^ServiceGroupInfo StrategyProtoHandler::GetCenterGroup() $/;"	f	class:StrategyProtoHandler
+GetCenterIps	startegy_proto_handler.cpp	/^bool StrategyProtoHandler::GetCenterIps(vector<string> &ips)$/;"	f	class:StrategyProtoHandler
+GetClientInfo	client_info.cpp	/^ClientInfo* ClientInfo::GetClientInfo(uint32_t sn) {$/;"	f	class:ClientInfo
+GetGameIdVec	dao.cpp	/^std::vector<int> GetGameIdVec()$/;"	f
+GetGameIdVecWithFlag	dao.cpp	/^std::vector<int> GetGameIdVecWithFlag()$/;"	f
+GetNameList	functions.h	/^std::vector<std::string> GetNameList(std::string & name_list_str)$/;"	f
+GetNextInterval	client_info.cpp	/^uint32_t ClientInfo::GetNextInterval(uint32_t sync_time, uint32_t now) {$/;"	f	class:ClientInfo
+GetPkgLenSer	control.cpp	/^int Control::GetPkgLenSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Control
+GetPkgLenSer	producer.cpp	/^int Producer::GetPkgLenSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Producer
+GetPkgLenSer	proxy.cpp	/^int Proxy::GetPkgLenSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Proxy
+GetPkgLenSer	startegy_async_handler.cpp	/^int StrategyAsyncProtoHandler::GetPkgLenSer(const char *buf, uint32_t len)$/;"	f	class:StrategyAsyncProtoHandler
+GetPkgLenSer	switch_proto_handler.cpp	/^int SwitchProtoHandler::GetPkgLenSer(const char * buf, uint32_t len)$/;"	f	class:SwitchProtoHandler
+GetSeqNum	startegy_async_handler.cpp	/^bool StrategyAsyncProtoHandler::GetSeqNum(const char *buf, uint32_t len, $/;"	f	class:StrategyAsyncProtoHandler
+GetSeqNum	switch_proto_handler.cpp	/^bool SwitchProtoHandler::GetSeqNum(const char * buf, uint32_t len, uint32_t &seq_num)$/;"	f	class:SwitchProtoHandler
+GetSerializeNo	client_info.cpp	/^uint32_t ClientInfo::GetSerializeNo() {$/;"	f	class:ClientInfo
+GidHandlerMapDbproxy	client_info.h	/^    typedef  std::map<int, DbproxyProtoHandler *> GidHandlerMapDbproxy;$/;"	t	class:ClientInfo
+GidHandlerMapDbproxy	proxy.h	/^typedef std::map<int, DbproxyProtoHandler *> GidHandlerMapDbproxy;$/;"	t
+GidHandlerMapSwitch	proxy.h	/^typedef std::multimap<int, SwitchProtoHandler *> GidHandlerMapSwitch;$/;"	t
+INCLUDES	Makefile	/^INCLUDES	= -I. -I..\/..\/common-without-thrift -I..\/..\/async-server\/include  -I..\/..\/libaccount\/include -I\/usr\/include\/libaccount$/;"	m
+INIT_LIST_HEAD	list.h	41;"	d
+Init	client_info.cpp	/^int ClientInfo::Init(int game_id, uint32_t sync_id, const char * message, time_t timestamp, list_head_t * game_id_list)$/;"	f	class:ClientInfo
+Init	control.cpp	/^int Control::Init()$/;"	f	class:Control
+Init	producer.cpp	/^int Producer::Init()$/;"	f	class:Producer
+Init	proxy.cpp	/^int Proxy::Init()$/;"	f	class:Proxy
+Init	startegy_proto_handler.cpp	/^bool StrategyProtoHandler::Init(vector<string> &name_list, map<string, ServiceGroupInfo> &group_list)$/;"	f	class:StrategyProtoHandler
+InitFdList	producer.cpp	/^int Producer::InitFdList()$/;"	f	class:Producer
+InitGameIdList	proxy.cpp	/^int Proxy::InitGameIdList()$/;"	f	class:Proxy
+InitProtoHandler	route_mgr.cpp	/^int RouteMgr::InitProtoHandler(int game_id)$/;"	f	class:RouteMgr
+InitRouteMap	route_mgr.cpp	/^int RouteMgr::InitRouteMap()$/;"	f	class:RouteMgr
+InsertOneMessage	dao.cpp	/^int InsertOneMessage(int game_id, const char * message, uint32_t message_len, const char * table_name)$/;"	f
+LIBS	Makefile	/^LIBS		= -L. -L..\/..\/common-without-thrift\/  -L..\/..\/libaccount -lcommon  -ldl -lssl -linifile -lsafemysql -ltaomee -lsafemysql -laccount$/;"	m
+LIST_HEAD	list.h	34;"	d
+LIST_HEAD_INIT	list.h	32;"	d
+LinkDownCli	control.cpp	/^void Control:: LinkDownCli(int fd) $/;"	f	class:Control
+LinkDownCli	producer.cpp	/^void Producer:: LinkDownCli(int fd) $/;"	f	class:Producer
+LinkDownCli	proxy.cpp	/^void Proxy::LinkDownCli(int fd) $/;"	f	class:Proxy
+LinkDownSer	control.cpp	/^void Control:: LinkDownSer(int fd) $/;"	f	class:Control
+LinkDownSer	producer.cpp	/^void Producer:: LinkDownSer(int fd) $/;"	f	class:Producer
+LinkDownSer	proxy.cpp	/^void Proxy::LinkDownSer(int fd) $/;"	f	class:Proxy
+LinkUpCli	control.cpp	/^void Control:: LinkUpCli(int fd, uint32_t ip) $/;"	f	class:Control
+LinkUpCli	producer.cpp	/^void Producer:: LinkUpCli(int fd, uint32_t ip) $/;"	f	class:Producer
+LinkUpCli	proxy.cpp	/^void Proxy::LinkUpCli(int fd, uint32_t ip) $/;"	f	class:Proxy
+LinkUpSer	control.cpp	/^void Control:: LinkUpSer(int fd, uint32_t ip, uint16_t port) $/;"	f	class:Control
+LinkUpSer	producer.cpp	/^void Producer:: LinkUpSer(int fd, uint32_t ip, uint16_t port) $/;"	f	class:Producer
+LinkUpSer	proxy.cpp	/^void Proxy::LinkUpSer(int fd, uint32_t ip, uint16_t port) $/;"	f	class:Proxy
+MAX_BUF_LEN	center_proto.h	4;"	d
+MAX_GAME_ID	proto.h	32;"	d
+MAX_KEY_LEN	proto.h	31;"	d
+MAX_LEN	proto.h	28;"	d
+MAX_MESSAGE_LEN	dao.h	13;"	d
+MAX_MESSAGE_LEN	proto.h	29;"	d
+MAX_SEND_TIMES	proto.h	30;"	d
+MONITOR_DETAIL	monitor_api.h	13;"	d
+ModifyRouteMap	route_mgr.cpp	/^int RouteMgr::ModifyRouteMap()$/;"	f	class:RouteMgr
+NET_ERR	proto.h	39;"	d
+OBJS	Makefile	/^OBJS		= $(patsubst %.cpp, %.o, $(SOURCE))$/;"	m
+PopOneEachList	cache_mgr.cpp	/^void CacheMgr::PopOneEachList(uint32_t now)$/;"	f	class:CacheMgr
+PrintStateInfo	state_log.cpp	/^void StateLog::PrintStateInfo()$/;"	f	class:StateLog
+ProcPkgCli	control.cpp	/^void Control::ProcPkgCli(int fd, const char *buf, uint32_t len) $/;"	f	class:Control
+ProcPkgCli	producer.cpp	/^void Producer::ProcPkgCli(int fd, const char *buf, uint32_t len) $/;"	f	class:Producer
+ProcPkgCli	proxy.cpp	/^void Proxy::ProcPkgCli(int fd, const char *buf, uint32_t len) $/;"	f	class:Proxy
+ProcPkgSer	control.cpp	/^void Control:: ProcPkgSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Control
+ProcPkgSer	producer.cpp	/^void Producer:: ProcPkgSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Producer
+ProcPkgSer	proxy.cpp	/^void Proxy::ProcPkgSer(int fd, const char *buf, uint32_t len) $/;"	f	class:Proxy
+ProcPkgSer	startegy_async_handler.cpp	/^void StrategyAsyncProtoHandler::ProcPkgSer(const char *buf, uint32_t len)$/;"	f	class:StrategyAsyncProtoHandler
+ProcPkgSer	switch_proto_handler.cpp	/^void SwitchProtoHandler::ProcPkgSer(const char * buf, uint32_t len)$/;"	f	class:SwitchProtoHandler
+ProcessIdentity	dbproxy_proto_handler.cpp	/^bool DbproxyProtoHandler::ProcessIdentity(ClientInfo *ci, uint32_t seq_num, uint32_t userid)$/;"	f	class:DbproxyProtoHandler
+ProcessIdentity	switch_proto_handler.cpp	/^bool SwitchProtoHandler::ProcessIdentity(ClientInfo *ci, uint32_t seq_num, uint32_t userid)$/;"	f	class:SwitchProtoHandler
+Producer	producer.h	/^class Producer : public IProcessor$/;"	c
+ProtoBody	proto.h	/^struct ProtoBody$/;"	s
+ProtoHeader	proto.h	/^struct ProtoHeader$/;"	s
+Proxy	proxy.h	/^class Proxy : public IProcessor$/;"	c
+QUERY_STRATEGY_CMD	center_proto.h	21;"	d
+Query	startegy_proto_handler.cpp	/^bool StrategyProtoHandler::Query(vector<string> &name_list, mempool_t* g_mempool)$/;"	f	class:StrategyProtoHandler
+RP_ERROR_CODE_DB	monitor_api.h	6;"	d
+RP_ERROR_CODE_EXCEPTION	monitor_api.h	10;"	d
+RP_ERROR_CODE_LOGICAL	monitor_api.h	9;"	d
+RP_ERROR_CODE_NETWORK	monitor_api.h	7;"	d
+RP_ERROR_CODE_SYSCALL	monitor_api.h	8;"	d
+RecordFailCount	state_log.cpp	/^void StateLog::RecordFailCount(int game_id)$/;"	f	class:StateLog
+RecordSucCount	state_log.cpp	/^void StateLog::RecordSucCount(int game_id)$/;"	f	class:StateLog
+RemoveClientInfo	client_info.cpp	/^void ClientInfo::RemoveClientInfo(uint32_t sn) {$/;"	f	class:ClientInfo
+ReqPack	center_package.cpp	/^bool CenterPackHandler::ReqPack(char*in_buf, int buf_len, const vector<string> &list)$/;"	f	class:CenterPackHandler
+RouteMgr	route_mgr.h	/^    RouteMgr(GidHandlerMapDbproxy & gid_handler_map_dbproxy,$/;"	f	class:RouteMgr
+RouteMgr	route_mgr.h	/^class RouteMgr$/;"	c
+SOURCE	Makefile	/^SOURCE		= $(wildcard *.cpp)$/;"	m
+SelectLastSyncId	dao.cpp	/^int SelectLastSyncId(int game_id, uint32_t & last_sync_id)$/;"	f
+SelectOneMessageWithGameId	dao.cpp	/^int SelectOneMessageWithGameId(uint32_t last_sync_id, char * message, uint32_t & sync_id, int game_id, const char * table_name)$/;"	f
+SelectOneMessageWithStatus	dao.cpp	/^int SelectOneMessageWithStatus(int status, uint32_t & sync_id, char * message, int & game_id, const char * table_name)$/;"	f
+SendToClient	producer.cpp	/^void Producer::SendToClient(ClientInfo *ci, const char *buf, $/;"	f	class:Producer
+SendToClient	producer.cpp	/^void Producer::SendToClient(int fd, uint32_t seq_num, uint32_t cmd_id, $/;"	f	class:Producer
+SendToClient	proxy.cpp	/^void Proxy::SendToClient(ClientInfo *ci, const char *buf, $/;"	f	class:Proxy
+SendToClient	proxy.cpp	/^void Proxy::SendToClient(int fd, uint32_t seq_num, uint32_t cmd_id, $/;"	f	class:Proxy
+ServerCron	proxy.cpp	/^void Proxy::ServerCron()$/;"	f	class:Proxy
+SetClientInfo	client_info.cpp	/^uint32_t ClientInfo::SetClientInfo(ClientInfo *ci) {$/;"	f	class:ClientInfo
+StateLog	state_log.h	/^class StateLog$/;"	c
+StrategyAsyncProtoHandler	startegy_async_handler.h	/^	StrategyAsyncProtoHandler(){}$/;"	f	class:StrategyAsyncProtoHandler
+StrategyAsyncProtoHandler	startegy_async_handler.h	/^class StrategyAsyncProtoHandler : public IntAsyncProtoHandler,public CenterPackHandler$/;"	c
+StrategyProtoHandler	startegy_proto_handler.h	/^	StrategyProtoHandler(string name, int port):center_name(name), center_port(port){}$/;"	f	class:StrategyProtoHandler
+StrategyProtoHandler	startegy_proto_handler.h	/^class StrategyProtoHandler$/;"	c
+StrategySyncProtoHandler	startegy_sync_handler.h	/^	StrategySyncProtoHandler(){}$/;"	f	class:StrategySyncProtoHandler
+StrategySyncProtoHandler	startegy_sync_handler.h	/^class StrategySyncProtoHandler : public IntSyncProtoHandler, public CenterPackHandler$/;"	c
+SwitchProtoHandler	switch_proto_handler.cpp	/^SwitchProtoHandler::SwitchProtoHandler() : m_type(2)$/;"	f	class:SwitchProtoHandler
+SwitchProtoHandler	switch_proto_handler.h	/^class SwitchProtoHandler : public IntAsyncProtoHandler$/;"	c
+SyncGetProcessIdentity	startegy_sync_handler.cpp	/^bool StrategySyncProtoHandler::SyncGetProcessIdentity(vector<string> &name_list,$/;"	f	class:StrategySyncProtoHandler
+TAOMEE_H_LIST_H_	list.h	16;"	d
+TARGET	Makefile	/^TARGET		= ..\/bin\/sync-handler-center.so$/;"	m
+TidyLogPath	control.cpp	/^void Control::TidyLogPath(time_t now)$/;"	f	class:Control
+TimeEvent	control.cpp	/^void Control::TimeEvent() $/;"	f	class:Control
+TimeEvent	producer.cpp	/^void Producer:: TimeEvent() $/;"	f	class:Producer
+TimeEvent	proxy.cpp	/^void Proxy:: TimeEvent() $/;"	f	class:Proxy
+TimeOutEvent	startegy_proto_handler.cpp	/^void StrategyProtoHandler::TimeOutEvent(ClientInfo *ci)$/;"	f	class:StrategyProtoHandler
+TraverseList	cache_mgr.cpp	/^void CacheMgr::TraverseList(uint32_t now)$/;"	f	class:CacheMgr
+Uinit	startegy_proto_handler.cpp	/^void StrategyProtoHandler::Uinit()$/;"	f	class:StrategyProtoHandler
+Uninit	control.cpp	/^int Control::Uninit() $/;"	f	class:Control
+Uninit	producer.cpp	/^int Producer::Uninit() $/;"	f	class:Producer
+Uninit	proxy.cpp	/^int Proxy::Uninit() $/;"	f	class:Proxy
+UninitRouteMap	route_mgr.cpp	/^int RouteMgr::UninitRouteMap()$/;"	f	class:RouteMgr
+UpdateLastSyncId	dao.cpp	/^int UpdateLastSyncId(int game_id, uint32_t last_sync_id)$/;"	f
+UpdateOneMessage	dao.cpp	/^int UpdateOneMessage(uint32_t sync_id, int status, const char * table_name)$/;"	f
+UpdateReloadFlag	dao.cpp	/^int UpdateReloadFlag(int game_id, int flag)$/;"	f
+WORD_SIZE	mempool.cpp	8;"	d	file:
+XX	Makefile	/^XX			= g++$/;"	m
+_CACHE_MGR_H_	cache_mgr.h	2;"	d
+_CENTER_PACKAGE_H	center_package.h	2;"	d
+_CENTER_PROTO_H	center_proto.h	2;"	d
+_CLIENTINFO_H	client_info.h	2;"	d
+_CONTROL_H	control.h	2;"	d
+_DAO_H	dao.h	2;"	d
+_DBPROXY_PROTO_HANDLER_H_	dbproxy_proto_handler.h	2;"	d
+_FUNCTIONS_H_	functions.h	2;"	d
+_H_MEMPOOL_H_	mempool.h	2;"	d
+_H_SERVER_20110530_H_	server.h	9;"	d
+_MONITOR_API_H_	monitor_api.h	2;"	d
+_PRODUCER_H	producer.h	2;"	d
+_PROTO_H	proto.h	2;"	d
+_PROXY_H	proxy.h	2;"	d
+_ROUTE_MGR_H_	route_mgr.h	2;"	d
+_STARTEGY_ASYNC_HANDLER_H	startegy_async_handler.h	2;"	d
+_STATE_LOG_H_	state_log.h	2;"	d
+_STRATEGTY_SYNC_HANDLER_H	startegy_sync_handler.h	2;"	d
+_STRATEGY_PROTO_HANDLER_H	startegy_proto_handler.h	2;"	d
+_SWITCH_PROTO_HANDLER_H_	switch_proto_handler.h	2;"	d
+_TIMER_H	timer.h	3;"	d
+__builtin_prefetch	list.h	18;"	d
+__list_add	list.h	/^__list_add (struct list_head *new_entry,$/;"	f
+__list_del	list.h	/^__list_del (struct list_head *prev, struct list_head *next)$/;"	f
+__list_for_each	list.h	226;"	d
+__list_for_each_prev	list.h	238;"	d
+__list_splice	list.h	/^__list_splice (struct list_head *list, struct list_head *head)$/;"	f
+alloc_pool_pos	mempool.h	/^    size_t alloc_pool_pos;$/;"	m	struct:mempool
+alloc_ptr	mempool.h	/^    char *alloc_ptr;$/;"	m	struct:mempool
+alloc_size	mempool.h	/^    size_t alloc_size;$/;"	m	struct:mempool
+arg	timer.h	/^    void *arg;$/;"	m	struct:timer_event_t
+buf	client_info.h	/^    char buf[1024];$/;"	m	class:ClientInfo
+center_name	startegy_proto_handler.h	/^	string center_name;$/;"	m	class:StrategyProtoHandler
+center_port	startegy_proto_handler.h	/^	int center_port;$/;"	m	class:StrategyProtoHandler
+check_open_cli	server.cpp	/^extern "C" int check_open_cli(uint32_t ip, uint16_t port) $/;"	f
+chnl_id	server.h	/^    uint16_t chnl_id;$/;"	m	struct:__anon1
+chnl_key_comp	server.h	/^struct chnl_key_comp$/;"	s
+chnl_key_t	server.h	/^} __attribute__((packed)) chnl_key_t;$/;"	t	typeref:struct:__anon1
+chnl_type	server.h	/^    uint8_t chnl_type;$/;"	m	struct:__anon1
+cli_cmd	client_info.h	/^    uint16_t         cli_cmd;  \/\/ for debug$/;"	m	class:ClientInfo
+cli_fd	client_info.h	/^    int              cli_fd;$/;"	m	class:ClientInfo
+cli_seq	client_info.h	/^    uint32_t         cli_seq;$/;"	m	class:ClientInfo
+client_info_map	client_info.cpp	/^ClientInfo::ClientInfoMap ClientInfo::client_info_map;$/;"	m	class:ClientInfo	file:
+client_info_map	client_info.h	/^    static ClientInfoMap client_info_map;$/;"	m	class:ClientInfo
+cm	server.cpp	/^static ConfigManager *cm = NULL;$/;"	v	file:
+cmd_id	center_proto.h	/^    uint16_t cmd_id;$/;"	m	struct:__anon3
+cmd_id	proto.h	/^    uint16_t cmd_id;$/;"	m	struct:ProtoHeader
+cmd_id	server.h	/^    uint32_t cmd_id;$/;"	m	struct:__anon2
+cmd_info_t	server.h	/^} cmd_info_t;$/;"	t	typeref:struct:__anon2
+config_get_intval	server.cpp	/^extern "C" int config_get_intval(const char *key, int defult)$/;"	f
+config_get_strval	server.cpp	/^extern "C" const char *config_get_strval(const char *key, const char *defult)$/;"	f
+config_info	center_proto.h	/^}__attribute__((packed)) config_info;$/;"	t	typeref:struct:__anon4
+deal_flag	client_info.h	/^    uint32_t         deal_flag;$/;"	m	class:ClientInfo
+event	client_info.h	/^    timer_event_t    event;$/;"	m	class:ClientInfo
+event_init	timer.cpp	/^int event_init(timer_event_t *event)$/;"	f
+expire_time	timer.h	/^    time_t expire_time;$/;"	m	struct:timer_event_t
+fail_count_arr	state_log.cpp	/^uint32_t StateLog::fail_count_arr[MAX_GAME_ID];$/;"	m	class:StateLog	file:
+fail_count_arr	state_log.h	/^    static uint32_t fail_count_arr[MAX_GAME_ID];$/;"	m	class:StateLog
+fd_list_node	client_info.h	/^    list_head_t      fd_list_node;$/;"	m	class:ClientInfo
+forbidden	center_proto.h	/^	uint8_t forbidden;$/;"	m	struct:__anon7
+forbidden	center_proto.h	/^	uint8_t forbidden;$/;"	m	struct:__anon8
+forbidden	center_proto.h	/^	uint8_t forbidden;$/;"	m	struct:__anon9
+func	timer.h	/^    timeout_callback_t func;$/;"	m	struct:timer_event_t
+g_cache_mgr	proxy.cpp	/^CacheMgr * g_cache_mgr = NULL;$/;"	v
+g_client_fd_list_producer	producer.cpp	/^list_head_t *g_client_fd_list_producer = NULL;$/;"	v
+g_game_id_list	proxy.cpp	/^list_head_t *g_game_id_list = NULL;$/;"	v
+g_game_id_vec	proxy.cpp	/^std::vector<int> g_game_id_vec;$/;"	v
+g_gid_handler_map_dbproxy	proxy.cpp	/^GidHandlerMapDbproxy g_gid_handler_map_dbproxy;$/;"	v
+g_gid_handler_map_switch	proxy.cpp	/^GidHandlerMapSwitch g_gid_handler_map_switch;$/;"	v
+g_last_sync_id_arr	proxy.cpp	/^uint32_t g_last_sync_id_arr[MAX_GAME_ID];$/;"	v
+g_max_game_id	proxy.cpp	/^int g_max_game_id = MAX_GAME_ID;$/;"	v
+g_max_open_fd_producer	producer.cpp	/^int g_max_open_fd_producer = 100000;$/;"	v
+g_mempool	proxy.cpp	/^mempool_t* g_mempool = NULL;$/;"	v
+g_mempool_producer	producer.cpp	/^mempool_t* g_mempool_producer = NULL;$/;"	v
+g_mysql_handler	server.cpp	/^i_mysql_iface * g_mysql_handler = NULL;$/;"	v
+g_net_timer	proxy.cpp	/^list_head_t g_net_timer;$/;"	v
+g_net_timer_producer	producer.cpp	/^list_head_t g_net_timer_producer;$/;"	v
+g_route_mgr	proxy.cpp	/^RouteMgr * g_route_mgr = NULL;$/;"	v
+g_sync_num	proxy.cpp	/^int g_sync_num = 100;$/;"	v
+g_timeout_s	proxy.cpp	/^int g_timeout_s = 8 * 24 * 3600;$/;"	v
+g_timeout_s_producer	producer.cpp	/^int g_timeout_s_producer = 2;$/;"	v
+game_id	client_info.h	/^    int              game_id;   $/;"	m	class:ClientInfo
+game_id_list_node	client_info.h	/^    list_head_t      game_id_list_node;$/;"	m	class:ClientInfo
+get_pkg_len_cli	server.cpp	/^extern "C" int get_pkg_len_cli(const char *buf, uint32_t len) $/;"	f
+get_pkg_len_ser	server.cpp	/^extern "C" int get_pkg_len_ser(int fd, const char *buf, uint32_t len) $/;"	f
+group_strategy	center_proto.h	/^	uint8_t group_strategy;$/;"	m	struct:__anon9
+host_info	center_proto.h	/^}__attribute__((packed)) host_info;$/;"	t	typeref:struct:__anon7
+identity	proto.h	/^    char     identity[64];$/;"	m	struct:ProtoBody
+identity1	proto.h	/^    char     identity1[64];$/;"	m	struct:Content
+identity2	proto.h	/^    char     identity2[64];$/;"	m	struct:Content
+ip	center_proto.h	/^	char ip[32];$/;"	m	struct:__anon6
+ip	center_proto.h	/^	char ip[32];$/;"	m	struct:__anon7
+ip_list	startegy_proto_handler.h	/^	vector<string> ip_list;$/;"	m	class:StrategyProtoHandler
+is_event_works	timer.cpp	/^int is_event_works(timer_event_t *event)$/;"	f
+item_size	mempool.h	/^    size_t item_size;$/;"	m	struct:mempool
+item_size	mempool.h	/^    size_t item_size;$/;"	m	struct:variable_mempool_entry
+key	center_proto.h	/^    char key[64];$/;"	m	struct:__anon4
+last_send_time	client_info.h	/^    uint32_t         last_send_time;$/;"	m	class:ClientInfo
+link_down_cli	server.cpp	/^extern "C" void link_down_cli(int fd)$/;"	f
+link_down_ser	server.cpp	/^extern "C" void link_down_ser(int fd)$/;"	f
+link_up_cli	server.cpp	/^extern "C" void link_up_cli(int fd, uint32_t ip)$/;"	f
+link_up_ser	server.cpp	/^extern "C" void link_up_ser(int fd, uint32_t ip, uint16_t port)$/;"	f
+list	center_proto.h	/^	config_info list[0];$/;"	m	struct:__anon11
+list	center_proto.h	/^	host_info list[0];$/;"	m	struct:__anon8
+list	center_proto.h	/^	service_group_info list[0];$/;"	m	struct:__anon10
+list	center_proto.h	/^	service_replicas_info list[0];$/;"	m	struct:__anon9
+list_add	list.h	/^list_add (struct list_head *new_entry, struct list_head *head)$/;"	f
+list_add_tail	list.h	/^list_add_tail (struct list_head *new_entry, struct list_head *head)$/;"	f
+list_del	list.h	/^list_del (struct list_head *entry)$/;"	f
+list_del_init	list.h	/^list_del_init (struct list_head *entry)$/;"	f
+list_empty	list.h	/^list_empty (struct list_head *head)$/;"	f
+list_entry	list.h	208;"	d
+list_entry	mempool.h	/^    struct list_head list_entry;$/;"	m	struct:variable_mempool_entry	typeref:struct:variable_mempool_entry::list_head
+list_for_each	list.h	217;"	d
+list_for_each	list.h	220;"	d
+list_for_each_entry	list.h	260;"	d
+list_for_each_entry	list.h	265;"	d
+list_for_each_entry_safe	list.h	274;"	d
+list_for_each_prev	list.h	233;"	d
+list_for_each_safe	list.h	248;"	d
+list_head	list.h	/^struct list_head$/;"	s
+list_head_t	list.h	/^typedef struct list_head list_head_t;$/;"	t	typeref:struct:list_head
+list_move	list.h	/^list_move (struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	list.h	/^list_move_tail (struct list_head *list, struct list_head *head)$/;"	f
+list_splice	list.h	/^list_splice (struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	list.h	/^list_splice_init (struct list_head *list, struct list_head *head)$/;"	f
+load_config	server.cpp	/^extern "C" bool load_config(const char *source, int type)$/;"	f
+m_game_id_vec	route_mgr.h	/^    std::vector<int> & m_game_id_vec;$/;"	m	class:RouteMgr
+m_game_id_vec_reload	route_mgr.h	/^    std::vector<int> m_game_id_vec_reload;$/;"	m	class:RouteMgr
+m_gid_handler_map_dbproxy	route_mgr.h	/^    GidHandlerMapDbproxy & m_gid_handler_map_dbproxy;$/;"	m	class:RouteMgr
+m_gid_handler_map_switch	route_mgr.h	/^    GidHandlerMapSwitch & m_gid_handler_map_switch;$/;"	m	class:RouteMgr
+m_gid_it_dbproxy	route_mgr.h	/^    GidHandlerMapDbproxy::iterator m_gid_it_dbproxy;$/;"	m	class:RouteMgr
+m_gid_it_switch	route_mgr.h	/^    GidHandlerMapSwitch::iterator m_gid_it_switch;$/;"	m	class:RouteMgr
+m_group	proxy.cpp	/^map<string, ServiceGroupInfo> m_group;$/;"	v
+m_it	cache_mgr.h	/^    std::vector<int>::iterator m_it;$/;"	m	class:CacheMgr
+m_log_processor	control.h	/^    LogProcessor *m_log_processor;$/;"	m	class:Control
+m_reload_it	route_mgr.h	/^    std::vector<int>::iterator m_reload_it;$/;"	m	class:RouteMgr
+m_ret	route_mgr.h	/^    std::pair<GidHandlerMapSwitch::iterator, GidHandlerMapSwitch::iterator> m_ret; $/;"	m	class:RouteMgr
+m_service_group	startegy_proto_handler.h	/^	map<string, ServiceGroupInfo> m_service_group;$/;"	m	class:StrategyProtoHandler
+m_sync_num	cache_mgr.h	/^    int m_sync_num; $/;"	m	class:CacheMgr
+m_type	cache_mgr.h	/^    int m_type;$/;"	m	class:CacheMgr
+main	server.cpp	/^static IProcessor* main = NULL;$/;"	v	file:
+mempool	mempool.h	/^typedef struct mempool$/;"	s
+mempool_alloc	mempool.cpp	/^void* mempool_alloc(mempool_t *pool)$/;"	f
+mempool_calloc	mempool.cpp	/^void* mempool_calloc(mempool_t *pool)$/;"	f
+mempool_create	mempool.cpp	/^mempool_t* mempool_create(size_t item_size, size_t alloc_size)$/;"	f
+mempool_destroy	mempool.cpp	/^int mempool_destroy(mempool_t *pool)$/;"	f
+mempool_free	mempool.cpp	/^int mempool_free(mempool_t *pool, void* data)$/;"	f
+mempool_inc_refcount	mempool.cpp	/^int mempool_inc_refcount(mempool_t *pool)$/;"	f
+mempool_t	mempool.h	/^} mempool_t;$/;"	t	typeref:struct:mempool
+mempool_table	mempool.h	/^    variable_mempool_entry_t **mempool_table;$/;"	m	struct:variable_mempool
+multiple	mempool.h	/^    int multiple;$/;"	m	struct:variable_mempool
+name	center_proto.h	/^	char name[64];$/;"	m	struct:__anon5
+name	center_proto.h	/^	char name[64];$/;"	m	struct:__anon9
+name_info	center_proto.h	/^}__attribute__((packed)) name_info;$/;"	t	typeref:struct:__anon5
+name_list	center_proto.h	/^	name_info name_list[0];$/;"	m	struct:__anon6
+name_num	center_proto.h	/^	uint32_t name_num;$/;"	m	struct:__anon6
+next	list.h	/^  struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+num	center_proto.h	/^	uint32_t num;$/;"	m	struct:__anon10
+num	center_proto.h	/^	uint32_t num;$/;"	m	struct:__anon11
+num	center_proto.h	/^	uint32_t num;$/;"	m	struct:__anon8
+num	center_proto.h	/^	uint32_t num;$/;"	m	struct:__anon9
+operator ()	server.h	/^    bool operator() (const chnl_key_t& lhs, const chnl_key_t& rhs) const$/;"	f	struct:chnl_key_comp
+owner	timer.h	/^    void *owner;$/;"	m	struct:timer_event_t
+path	center_proto.h	/^	char path[1024];$/;"	m	struct:__anon6
+pkg_len	center_proto.h	/^    uint32_t pkg_len;$/;"	m	struct:__anon3
+pkg_len	client_info.h	/^    uint32_t         pkg_len;$/;"	m	class:ClientInfo
+pkg_len	proto.h	/^    uint32_t pkg_len;$/;"	m	struct:ProtoHeader
+plugin_fini	server.cpp	/^extern "C" int plugin_fini(int type)$/;"	f
+plugin_init	server.cpp	/^extern "C" int plugin_init(int type)$/;"	f
+pool	mempool.h	/^    mempool_t *pool;$/;"	m	struct:variable_mempool_entry
+port	center_proto.h	/^	uint32_t port;$/;"	m	struct:__anon7
+prev	list.h	/^  struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+proc_pkg_cli	server.cpp	/^extern "C" void proc_pkg_cli(int fd, const char *buf, uint32_t len)$/;"	f
+proc_pkg_ser	server.cpp	/^extern "C" void proc_pkg_ser(int fd, const char *buf, uint32_t len)$/;"	f
+proto_header	center_proto.h	/^} __attribute__((packed)) proto_header;$/;"	t	typeref:struct:__anon3
+ref_count	mempool.h	/^    int ref_count;$/;"	m	struct:mempool
+reload_config	server.cpp	/^extern "C" bool reload_config(const char *source)$/;"	f
+replicas_strategy	center_proto.h	/^	uint8_t replicas_strategy;$/;"	m	struct:__anon8
+reuse_ptr	mempool.h	/^    char *reuse_ptr;$/;"	m	struct:mempool
+secure_ip	server.h	/^    std::string secure_ip;$/;"	m	struct:__anon2
+select_channel	server.cpp	/^extern "C" int select_channel(int fd, const char *buf, uint32_t len, uint32_t ip, uint32_t work_num) $/;"	f
+send_ser_times	client_info.h	/^	uint32_t		 send_ser_times;$/;"	m	class:ClientInfo
+send_times	client_info.h	/^    uint8_t          send_times; $/;"	m	class:ClientInfo
+seq_num	center_proto.h	/^    uint32_t seq_num;$/;"	m	struct:__anon3
+seq_num	proto.h	/^    uint32_t seq_num;$/;"	m	struct:ProtoHeader
+ser_seq	client_info.h	/^    uint32_t         ser_seq;$/;"	m	class:ClientInfo
+serialized_no	client_info.cpp	/^uint32_t ClientInfo::serialized_no = 0;$/;"	m	class:ClientInfo	file:
+serialized_no	client_info.h	/^    static uint32_t serialized_no;$/;"	m	class:ClientInfo
+serv_query_group_ack_1	center_proto.h	/^}__attribute__((packed)) serv_query_group_ack_1;$/;"	t	typeref:struct:__anon10
+serv_query_group_ack_2	center_proto.h	/^}__attribute__((packed)) serv_query_group_ack_2;$/;"	t	typeref:struct:__anon11
+serv_query_group_req	center_proto.h	/^}__attribute__((packed)) serv_query_group_req;$/;"	t	typeref:struct:__anon6
+service_group_info	center_proto.h	/^}__attribute__((packed)) service_group_info;$/;"	t	typeref:struct:__anon9
+service_replicas_info	center_proto.h	/^}__attribute__((packed)) service_replicas_info;$/;"	t	typeref:struct:__anon8
+set_config	server.cpp	/^extern "C" void set_config(const char* key, const char* value)$/;"	f
+shmq_pushed	server.cpp	/^extern "C" int shmq_pushed(int fd, const char *buf, uint32_t len, int flag)$/;"	f
+status_code	center_proto.h	/^    uint32_t status_code;$/;"	m	struct:__anon3
+status_code	proto.h	/^    uint32_t status_code;$/;"	m	struct:ProtoHeader
+strategy_handler	proxy.cpp	/^StrategyProtoHandler *strategy_handler = NULL;$/;"	v
+suc_count_arr	state_log.cpp	/^uint32_t StateLog::suc_count_arr[MAX_GAME_ID];$/;"	m	class:StateLog	file:
+suc_count_arr	state_log.h	/^    static uint32_t suc_count_arr[MAX_GAME_ID];$/;"	m	class:StateLog
+sync_id	client_info.h	/^    uint32_t         sync_id;$/;"	m	class:ClientInfo
+sync_time	client_info.h	/^    uint32_t         sync_time;$/;"	m	class:ClientInfo
+table_count	mempool.h	/^    unsigned int table_count;$/;"	m	struct:variable_mempool
+table_size	mempool.h	/^    unsigned int table_size;$/;"	m	struct:variable_mempool
+time_event	server.cpp	/^extern "C" void time_event()$/;"	f
+timeout_callback_t	timer.h	/^typedef int (* timeout_callback_t)(void *owner, void *arg);$/;"	t
+timeout_ms	center_proto.h	/^	uint32_t timeout_ms;$/;"	m	struct:__anon7
+timer_add_event	timer.cpp	/^int timer_add_event(list_head_t *timer, timer_event_t *event,$/;"	f
+timer_check_event	timer.cpp	/^int timer_check_event(list_head_t *timer)$/;"	f
+timer_del_event	timer.cpp	/^int timer_del_event(timer_event_t *event)$/;"	f
+timer_event_t	timer.h	/^struct timer_event_t$/;"	s
+timer_init	timer.cpp	/^int timer_init(list_head_t *timer)$/;"	f
+timer_node	timer.h	/^    list_head_t timer_node;$/;"	m	struct:timer_event_t
+timer_uninit	timer.cpp	/^int timer_uninit(list_head_t *timer)$/;"	f
+total_alloc_item	mempool.h	/^    size_t total_alloc_item;$/;"	m	struct:mempool
+type	center_proto.h	/^    uint32_t type;$/;"	m	struct:__anon4
+user_id	center_proto.h	/^    uint32_t user_id;$/;"	m	struct:__anon3
+user_id	proto.h	/^    uint32_t user_id;$/;"	m	struct:ProtoHeader
+userid	client_info.h	/^    uint32_t         userid;   \/\/ for debug$/;"	m	class:ClientInfo
+value	center_proto.h	/^    char value[0];$/;"	m	struct:__anon4
+value_len	center_proto.h	/^    uint32_t value_len;$/;"	m	struct:__anon4
+var_mempool_alloc	mempool.cpp	/^void* var_mempool_alloc(variable_mempool_t* var_mempool, unsigned int item_size)$/;"	f
+var_mempool_calloc	mempool.cpp	/^void* var_mempool_calloc(variable_mempool_t* var_mempool, unsigned int item_size)$/;"	f
+var_mempool_create	mempool.cpp	/^variable_mempool_t* var_mempool_create(unsigned int reg_table_size, unsigned int multiple)$/;"	f
+var_mempool_destroy	mempool.cpp	/^int var_mempool_destroy(variable_mempool_t *var_mempool)$/;"	f
+var_mempool_free	mempool.cpp	/^int var_mempool_free(variable_mempool_t* var_mempool, void* data, unsigned int data_size)$/;"	f
+var_mempool_get	mempool.cpp	/^static mempool_t* var_mempool_get(variable_mempool_t *pool, size_t item_size)$/;"	f	file:
+var_mempool_put	mempool.cpp	/^static mempool_t* var_mempool_put(variable_mempool_t* pool, size_t item_size, mempool_t* sub_pool)$/;"	f	file:
+variable_mempool	mempool.h	/^typedef struct variable_mempool$/;"	s
+variable_mempool_entry	mempool.h	/^typedef struct variable_mempool_entry$/;"	s
+variable_mempool_entry_t	mempool.h	/^} variable_mempool_entry_t;$/;"	t	typeref:struct:variable_mempool_entry
+variable_mempool_t	mempool.h	/^} variable_mempool_t;$/;"	t	typeref:struct:variable_mempool
+~CacheMgr	cache_mgr.h	/^    ~CacheMgr(){}$/;"	f	class:CacheMgr
+~DbproxyProtoHandler	dbproxy_proto_handler.h	/^    virtual ~DbproxyProtoHandler(){}$/;"	f	class:DbproxyProtoHandler
+~RouteMgr	route_mgr.h	/^    ~RouteMgr()$/;"	f	class:RouteMgr
+~StrategyAsyncProtoHandler	startegy_async_handler.h	/^	virtual ~StrategyAsyncProtoHandler(){}$/;"	f	class:StrategyAsyncProtoHandler
+~StrategySyncProtoHandler	startegy_sync_handler.h	/^	~StrategySyncProtoHandler(){}$/;"	f	class:StrategySyncProtoHandler
+~SwitchProtoHandler	switch_proto_handler.h	/^    virtual ~SwitchProtoHandler(){}$/;"	f	class:SwitchProtoHandler

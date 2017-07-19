@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src
+END
+center_package.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src/center_package.h
+END
+startegy_async_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_async_handler.h
+END
+dao.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/platform/!svn/ver/63689/refactor/boss/sync-handler-center-product/src/dao.cpp
+END
+server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/platform/!svn/ver/63735/refactor/boss/sync-handler-center-product/src/server.cpp
+END
+dbproxy_proto_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/platform/!svn/ver/63671/refactor/boss/sync-handler-center-product/src/dbproxy_proto_handler.cpp
+END
+route_mgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/route_mgr.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/platform/!svn/ver/63715/refactor/boss/sync-handler-center-product/src/proto.h
+END
+center_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src/center_proto.h
+END
+mempool.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/mempool.h
+END
+cache_mgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/cache_mgr.h
+END
+functions.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/functions.h
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/tags
+END
+timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/platform/!svn/ver/63737/refactor/boss/sync-handler-center-product/src/timer.cpp
+END
+startegy_proto_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_proto_handler.cpp
+END
+control.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/control.h
+END
+proxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/proxy.h
+END
+state_log.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/state_log.h
+END
+switch_proto_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/switch_proto_handler.h
+END
+producer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/producer.h
+END
+center_package.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src/center_package.cpp
+END
+startegy_async_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_async_handler.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/platform/!svn/ver/63668/refactor/boss/sync-handler-center-product/src/Makefile
+END
+client_info.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/client_info.h
+END
+startegy_sync_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_sync_handler.h
+END
+route_mgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src/route_mgr.cpp
+END
+mempool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/mempool.cpp
+END
+cache_mgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/platform/!svn/ver/63709/refactor/boss/sync-handler-center-product/src/cache_mgr.cpp
+END
+dao.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/platform/!svn/ver/63671/refactor/boss/sync-handler-center-product/src/dao.h
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/server.h
+END
+dbproxy_proto_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/dbproxy_proto_handler.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/list.h
+END
+control.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/control.cpp
+END
+proxy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product/src/proxy.cpp
+END
+state_log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/state_log.cpp
+END
+switch_proto_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/switch_proto_handler.cpp
+END
+producer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/platform/!svn/ver/63695/refactor/boss/sync-handler-center-product/src/producer.cpp
+END
+monitor_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/monitor_api.h
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/timer.h
+END
+startegy_proto_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_proto_handler.h
+END
+client_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/platform/!svn/ver/63715/refactor/boss/sync-handler-center-product/src/client_info.cpp
+END
+startegy_sync_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/src/startegy_sync_handler.cpp
+END

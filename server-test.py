@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+import socket
+import struct
+import select
+import time
+import sys,os
+
+if(len(sys.argv) != 3):
+    print "Usage:\n", sys.argv[0]," ip port"
+    sys.exit(1)
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+sock.setblocking(False)
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+sock.bind((sys.argv[1], int(sys.argv[2])))
+sock.listen(100);
+
+ins = [sock]
+
+while True:
+    timeout = 20
+    r, w, e = select.select(ins, [], ins, timeout)
+    if(not (r or w or e)):
+        continue
+    for i in r:
+        if i is sock:
+            cli, addr = sock.accept()
+            print "new connection from ", addr
+            ins.append(cli)
+        else:
+            data = i.recv(66);
+            if(data):
+                ret = struct.unpack("<IIHIILLLLLLLL16s", data)
+                print "recv: ", ret
+                seq = ret[1]
+                ack = struct.pack("<IIHII", 18, seq, 6001, 0, 721018944)
+                i.send(ack)
+                print "send: ", struct.unpack("<IIHII", ack)
+            else:
+                print "client ", i, " closed."
+                i.close()
+                ins.remove(i)
+
+    for i in e:
+        print i, "exception"
+        i.close()
+        ins.remove(i)
+
+for i in ins:
+    i.close()
+    ins.remove(i)
+
+sys.exit(0)

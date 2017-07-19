@@ -1,0 +1,24 @@
+log_dir         ./log
+log_level       8
+log_size        32000000
+log_maxfiles    100
+
+proc_name       sync-handler-center
+pid_file        ./bin/daemon.pid
+plugin_file     ./bin/sync_handler_center.so
+
+shmq_size       40960
+
+max_connect     20000
+max_pkg_len     4096 
+
+bind_ip         0.0.0.0 
+bind_port       21199
+
+work_num        3
+
+
+#log_archive_days   7
+#log_remove_days    28
+
+include         ./conf/proxy.conf

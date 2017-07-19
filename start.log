@@ -1,0 +1,7 @@
+[1m[31m10:25:17 [config_proto_handler.cpp][47]CGetProcessIdentity: Get config failed.
+[m[1m[31m10:25:17 [center_config_manager.cpp][50]GetConfigFromCenter: Get config failed.
+[m[1m[1m10:25:16 async_server 1.0, report bugs to <cliu.hust@hotmail.com>
+[mload plugin file:./bin/sync-handler-center.so                         [1m[32m[ ok ][m
+ip:10.1.1.35, path:/home/window/refactor/boss
+len:1106
+load config failed                                                    [1m[31m[ failed ][m

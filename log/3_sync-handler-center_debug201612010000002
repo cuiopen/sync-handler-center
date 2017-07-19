@@ -1,0 +1,24 @@
+[03:00:00] 0 [11006]filename is /opt/home/window/refactor/boss/sync-handler-center-product/log/3_sync-handler-center_debug201611300000001, rm_so 90, rm_eo 98, result is 0
+
+[03:00:00] 0 [11006]filename is /opt/home/window/refactor/boss/sync-handler-center-product/log/main_debug201611300000000, rm_so 73, rm_eo 81, result is 20161130
+
+[03:00:00] 0 [11006]filename is /opt/home/window/refactor/boss/sync-handler-center-product/log/2_sync-handler-center_debug201611300000000, rm_so 90, rm_eo 98, result is 20161130
+
+[03:00:00] 0 [11006]filename is /opt/home/window/refactor/boss/sync-handler-center-product/log/1_sync-handler-center_debug201611300000001, rm_so 90, rm_eo 98, result is 20161130
+
+[03:00:00] 0 [11006]filename is /opt/home/window/refactor/boss/sync-handler-center-product/log/2_sync-handler-center_error201611300000000, rm_so 90, rm_eo 98, result is 20161130
+
+[03:00:00] 0 [11006]filename is 3_sync-handler-center_debug201611300000001, rm_so 27, rm_eo 35, result is 0
+
+[03:00:00] 0 [11006]filename is main_debug201611300000000, rm_so 10, rm_eo 18, result is 0
+
+[03:00:00] 0 [11006]filename is 2_sync-handler-center_debug201611300000000, rm_so 27, rm_eo 35, result is 0
+
+[03:00:00] 0 [11006]filename is 1_sync-handler-center_debug201611300000001, rm_so 27, rm_eo 35, result is 0
+
+[03:00:00] 0 [11006]filename is 3_sync-handler-center_debug201612010000002, rm_so 27, rm_eo 35, result is 0
+
+[03:00:00] 0 [11006]filename is 2_sync-handler-center_error201611300000000, rm_so 27, rm_eo 35, result is 0
+
+[17:15:47] 0 [11006]Proxy finiting...
+[17:15:47] 0 [11006]Proxy finit successfully!

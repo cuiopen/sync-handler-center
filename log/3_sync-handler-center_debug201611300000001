@@ -1,0 +1,12 @@
+[10:37:25] 0 [09897]Proxy finiting...
+[10:37:25] 0 [09897]Proxy finit successfully!
+[10:37:29] 0 [18769]total work num 3, current work index 2
+[10:37:29] 0 [18769]LogProcessor contructor, workpath /opt/home/window/refactor/boss/sync-handler-center-product/log, archive_days 7, remove_days 28
+[15:10:13] 0 [18769]Proxy finiting...
+[15:10:13] 0 [18769]Proxy finit successfully!
+[15:10:40] 0 [27818]total work num 3, current work index 2
+[15:10:40] 0 [27818]LogProcessor contructor, workpath /opt/home/window/refactor/boss/sync-handler-center-product/log, archive_days 7, remove_days 28
+[15:10:45] 0 [27818]Proxy finiting...
+[15:10:45] 0 [27818]Proxy finit successfully!
+[15:40:31] 0 [11006]total work num 3, current work index 2
+[15:40:31] 0 [11006]LogProcessor contructor, workpath /opt/home/window/refactor/boss/sync-handler-center-product/log, archive_days 7, remove_days 28

@@ -1,0 +1,18 @@
+[10:37:29] 0 [18768][startegy_sync_handler.cpp][30]SyncGetProcessIdentity: Get Startegy failed.
+[10:37:29] 0 [18768][startegy_proto_handler.cpp][26]Init: StrategyProtoHandler:SyncGetProcessIdentity failed.
+[10:37:29] 0 [18768][route_mgr.cpp][51]InitProtoHandler: Init StrategyProtoHandler failed
+[10:37:29] 0 [18768][route_mgr.cpp][20]InitRouteMap: InitProtoHandler failed  game_id is 2
+[10:37:29] 0 [18768][proxy.cpp][113]Init: InitRouteMap failed
+[10:37:29] 0 [18768][server.cpp][113]plugin_init: new Proxy or Init failed
+[15:10:40] 0 [27817][startegy_sync_handler.cpp][30]SyncGetProcessIdentity: Get Startegy failed.
+[15:10:40] 0 [27817][startegy_proto_handler.cpp][26]Init: StrategyProtoHandler:SyncGetProcessIdentity failed.
+[15:10:40] 0 [27817][route_mgr.cpp][51]InitProtoHandler: Init StrategyProtoHandler failed
+[15:10:40] 0 [27817][route_mgr.cpp][20]InitRouteMap: InitProtoHandler failed  game_id is 2
+[15:10:40] 0 [27817][proxy.cpp][113]Init: InitRouteMap failed
+[15:10:40] 0 [27817][server.cpp][113]plugin_init: new Proxy or Init failed
+[15:40:31] 0 [11005][startegy_sync_handler.cpp][30]SyncGetProcessIdentity: Get Startegy failed.
+[15:40:31] 0 [11005][startegy_proto_handler.cpp][26]Init: StrategyProtoHandler:SyncGetProcessIdentity failed.
+[15:40:31] 0 [11005][route_mgr.cpp][51]InitProtoHandler: Init StrategyProtoHandler failed
+[15:40:31] 0 [11005][route_mgr.cpp][20]InitRouteMap: InitProtoHandler failed  game_id is 2
+[15:40:31] 0 [11005][proxy.cpp][113]Init: InitRouteMap failed
+[15:40:31] 0 [11005][server.cpp][113]plugin_init: new Proxy or Init failed

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/platform/!svn/ver/64004/refactor/boss/sync-handler-center-product
+END
+server.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/platform/!svn/ver/63710/refactor/boss/sync-handler-center-product/server.sh
+END
+error_warning.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/platform/!svn/ver/63856/refactor/boss/sync-handler-center-product/error_warning.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/platform/!svn/ver/63856/refactor/boss/sync-handler-center-product/test.py
+END
+server-test.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/server-test.py
+END
+add_game.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/platform/!svn/ver/64773/refactor/boss/sync-handler-center-product/add_game.sh
+END
+get_addr_list.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/platform/!svn/ver/63856/refactor/boss/sync-handler-center-product/get_addr_list.py
+END
+keep-alive.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/platform/!svn/ver/63664/refactor/boss/sync-handler-center-product/keep-alive.sh
+END

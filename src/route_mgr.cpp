@@ -1,0 +1,142 @@
+#include "route_mgr.h"
+#include "dao.h"
+#include "startegy_proto_handler.h"
+#include "dbproxy_proto_handler.h"
+#include "switch_proto_handler.h"
+#include "async_server.h"
+#include "functions.h"
+
+// 初始化路由表
+extern StrategyProtoHandler *strategy_handler;
+extern vector<string> g_name_list;
+
+
+int RouteMgr::InitRouteMap()
+{
+    m_game_id_vec = GetGameIdVec();
+    std::vector<int>::iterator it = m_game_id_vec.begin();
+    for (; it != m_game_id_vec.end(); ++it)
+    {
+        if (InitProtoHandler(*it) < 0)
+        {
+            ERROR_LOG("InitProtoHandler failed  game_id is %d", *it);
+            return -1;
+        }     
+    }
+    return 0;
+}
+
+int RouteMgr::InitProtoHandler(int game_id)
+{
+    char key_buf[MAX_KEY_LEN] = {0};
+    const char * name_list_buf = NULL;
+    sprintf(key_buf, "GAME_ID_%d", game_id);
+
+    name_list_buf = config_get_strval(key_buf, NULL);
+    if (NULL == name_list_buf)
+    {
+        ERROR_LOG("config get name_list_buf failed");
+        return -1;
+    }
+
+    std::string name_list_str(name_list_buf);
+
+    std::vector<std::string> name_list = GetNameList(name_list_str);
+    if (name_list.size() == 0)
+    {
+        ERROR_LOG("GetNameList from str failed name_list_str %s", name_list_str.c_str());
+        return -1;
+    }
+    g_name_list.insert(g_name_list.end(), name_list.begin(), name_list.end());
+    std::map<std::string, ServiceGroupInfo> m_group;
+    if (!strategy_handler->Init(name_list, m_group))
+    {
+        ERROR_LOG("Init StrategyProtoHandler failed");
+        return -1;
+    }
+
+    std::map<std::string, ServiceGroupInfo>::iterator it = m_group.begin();
+    for (; it != m_group.end(); ++it)
+    {
+        if (it->first.substr(0, 7) == "dbproxy")
+        {
+            DbproxyProtoHandler * p = new (std::nothrow) DbproxyProtoHandler;
+            if (!p || !p->Init(m_group[it->first]))
+            {
+                ERROR_LOG("new DbproxyProtoHandler or Init failed");
+                // 初始化的时候调用会报错，定时器调用的时候会在下次定时周期执行
+                return -1;
+            }
+            // dbproxy表
+            m_gid_handler_map_dbproxy.insert(std::make_pair(game_id, p));
+        // 此处需要校验
+        // 可能不仅仅不是dbproxy也不是switch,相关的问题
+    
+        } else {
+            SwitchProtoHandler * p = new (std::nothrow) SwitchProtoHandler;
+            if (!p || !p->Init(m_group[it->first]))
+            {
+                ERROR_LOG("new SwitchProtoHandler or Init failed");
+                return -1;
+            }
+            // switch表, multimap,可以有多个
+            m_gid_handler_map_switch.insert(std::make_pair(game_id, p));
+        }
+    }
+    return 0;
+    
+}
+
+
+int RouteMgr::UninitRouteMap()
+{
+    return 0;
+}
+
+
+int RouteMgr::ModifyRouteMap()
+{
+    m_game_id_vec = GetGameIdVec();
+    m_game_id_vec_reload = GetGameIdVecWithFlag();
+    m_reload_it = m_game_id_vec_reload.begin();
+
+    for (; m_reload_it != m_game_id_vec_reload.end(); ++m_reload_it)
+    {
+        // 无处理方法,为新增的游戏
+        // select flag=1的游戏就可以了
+        DEBUG_LOG("game_id %d", *m_reload_it);
+        // 不是新游戏，就删掉protohandler,进行更新
+        // 新游戏直接执行插入操作
+        // 同时操作switch表和dbproxy表
+        if (m_gid_handler_map_dbproxy.count(*m_reload_it))
+        {
+            m_gid_it_dbproxy = m_gid_handler_map_dbproxy.find(*m_reload_it);
+            if (m_gid_it_dbproxy->second) delete (m_gid_it_dbproxy->second);
+        }
+
+        if (m_gid_handler_map_switch.count(*m_reload_it))
+        {
+            m_ret = m_gid_handler_map_switch.equal_range(*m_reload_it); 
+            for (m_gid_it_switch = m_ret.first; m_gid_it_switch != m_ret.second; ++m_gid_it_switch)
+            {
+                // erase并不能析构指针所指向的对象
+                if (m_gid_it_switch->second) delete (m_gid_it_switch->second);
+            }
+            m_gid_handler_map_switch.erase(m_ret.first, m_ret.second);
+            DEBUG_LOG("update protohandler");
+        }
+
+        if (InitProtoHandler(*m_reload_it) < 0)
+        {
+            ERROR_LOG("InitProtoHandler failed, game_id is %d", *m_reload_it);
+            return -1;
+        }
+        // update status
+        if ((UpdateReloadFlag(*m_reload_it, 0)) < 0) 
+        {
+            ERROR_LOG("update reload status failed");
+            return -1;
+        }
+    }
+    return 0;
+}
